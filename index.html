@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rocky Paper Scissors Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Rocky Paper Scissors Game</h1>
+
+  <p class="dev">
+    Developed by
+    <a href="https://wa.me/917002443108" target="_blank">
+      Jahangir Hussain
+    </a>
+  </p>
+
+  <h2 class="choose-title">Choose:</h2>
+
+  <div class="choices">
+    <div class="choice" data-choice="rock">✊<span>Rock</span></div>
+    <div class="choice" data-choice="paper">✋<span>Paper</span></div>
+    <div class="choice" data-choice="scissors">✌<span>Scissors</span></div>
+  </div>
+
+  <div class="battle hidden" id="battle">
+    <img id="playerHand" class="hand left" src="images/rock.png">
+    <img id="computerHand" class="hand right" src="images/rock.png">
+  </div>
+
+  <div class="score">
+    <p>You: <b id="userScore">0</b></p>
+    <p>Computer: <b id="compScore">0</b></p>
+  </div>
+
+  <div id="result">Make your move!</div>
+
+</div>
+
+<!-- Sounds -->
+<audio id="clickSound" src="sounds/click.mp3"></audio>
+<audio id="winSound" src="sounds/win.mp3"></audio>
+<audio id="loseSound" src="sounds/lose.mp3"></audio>
+<audio id="drawSound" src="sounds/draw.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
