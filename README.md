@@ -1,4 +1,4 @@
-# 🎮 Rocky Paper Scissors Game
+# 🎮 Rock Paper Scissors Game
 
 A fun and animated **Rock–Paper–Scissors** game built using **HTML, CSS, and JavaScript**.
 
