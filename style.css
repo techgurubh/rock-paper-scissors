@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 22px;
+}
+
+.dev {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.dev a {
+  color: #25D366;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.choose-title {
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.choice {
+  cursor: pointer;
+  font-size: 45px;
+  transition: transform 0.2s;
+}
+
+.choice:hover {
+  transform: scale(1.2);
+}
+
+.choice span {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.battle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.hand {
+  width: 120px;
+}
+
+.left {
+  transform: rotateY(180deg);
+}
+
+.shake {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translateY(0) rotateY(180deg); }
+  25% { transform: translateY(-10px) rotateY(180deg); }
+  50% { transform: translateY(0) rotateY(180deg); }
+  75% { transform: translateY(-10px) rotateY(180deg); }
+  100% { transform: translateY(0) rotateY(180deg); }
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+#result {
+  font-size: 18px;
+  min-height: 25px;
+}
